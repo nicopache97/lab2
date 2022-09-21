@@ -1,4 +1,6 @@
 class Victims < ApplicationRecord
-    nombre
-    edad
+  validates :name, uniqueness: true , presence: true
+  has_many :monster, through: :attacks
+
   end
+  

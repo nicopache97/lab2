@@ -1,4 +1,5 @@
 class Monster < ApplicationRecord
-    nombre
-    
-  end
+  validates :name, uniqueness: true ,presence: true
+  has_many :victims, through: :attacks
+  
+end
