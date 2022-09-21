@@ -8,4 +8,5 @@ class Attacks < ApplicationRecord
       errors.add(:attacks, message: "ataque invalido para a menores");
     end
   end
+
 end
